@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basman Labs — WhatsApp bots and automation products</title>
+<meta name="description" content="Basman Labs builds WhatsApp-first productivity bots for Israeli businesses and individuals." />
+<style>
+  :root {
+    --bg: #1a2744; --bg2: #0f1a33; --card: #223355; --border: #2d4470;
+    --accent: #f5c542; --accent2: #ffd966; --text: #eef2ff; --text2: #8ba3c7; --text3: #5a7399;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 100%);
+    color: var(--text); font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh; line-height: 1.6; padding: 40px 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 60px; padding-top: 40px; }
+  .logo { font-size: 56px; margin-bottom: 16px; }
+  h1 { font-size: 42px; font-weight: 900; color: var(--accent); letter-spacing: -1px; margin-bottom: 12px; }
+  .tagline { color: var(--text2); font-size: 18px; max-width: 520px; margin: 0 auto; }
+  .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 60px; }
+  .product {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px 24px; transition: transform 0.2s, border-color 0.2s;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .product:hover { transform: translateY(-4px); border-color: var(--accent); }
+  .product-icon { font-size: 36px; margin-bottom: 12px; }
+  .product-name { font-size: 20px; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
+  .product-desc { color: var(--text2); font-size: 14px; }
+  .product-status { display: inline-block; margin-top: 12px; padding: 3px 10px; border-radius: 8px; font-size: 11px; font-weight: 700; }
+  .status-live { background: #4ade8020; color: #4ade80; border: 1px solid #4ade8040; }
+  .status-soon { background: #8ba3c720; color: var(--text2); border: 1px solid var(--border); }
+  footer { text-align: center; margin-top: 80px; color: var(--text3); font-size: 13px; padding-top: 32px; border-top: 1px solid var(--border); }
+  footer a { color: var(--accent); text-decoration: none; margin: 0 12px; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    h1 { font-size: 32px; } .logo { font-size: 44px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">⚗️</div>
+      <h1>Basman Labs</h1>
+      <p class="tagline">We build WhatsApp-first productivity bots for Israeli businesses and individuals. Simple, fast, in your pocket.</p>
+    </header>
+
+    <div class="products">
+      <a href="https://handyman.basmanlabs.com" class="product">
+        <div class="product-icon">🔧</div>
+        <div class="product-name">HandyMan</div>
+        <div class="product-desc">Expense &amp; client management for contractors via WhatsApp. Your data, your Google Sheet.</div>
+        <span class="product-status status-live">Live</span>
+      </a>
+
+      <div class="product" style="cursor: default;">
+        <div class="product-icon">🤖</div>
+        <div class="product-name">T-800</div>
+        <div class="product-desc">Personal task assistant. Calendar, tasks, reminders — all via WhatsApp.</div>
+        <span class="product-status status-live">Live</span>
+      </div>
+
+      <div class="product" style="cursor: default;">
+        <div class="product-icon">✨</div>
+        <div class="product-name">More coming</div>
+        <div class="product-desc">CRM, invoicing, scheduling — all WhatsApp-native. Stay tuned.</div>
+        <span class="product-status status-soon">Soon</span>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built by Basman &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Service</a> &middot; <a href="mailto:basmanab88@gmail.com">Contact</a></p>
+      <p style="margin-top: 10px; font-size: 11px;">&copy; 2026 Basman Labs. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

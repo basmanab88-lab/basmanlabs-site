@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Basman Labs</title>
+<style>
+  body {
+    background: #f8fafc; color: #1a2744; font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.7; padding: 40px 20px; max-width: 820px; margin: 0 auto;
+  }
+  h1 { font-size: 36px; color: #1a2744; margin-bottom: 8px; }
+  h2 { font-size: 22px; color: #223355; margin-top: 36px; margin-bottom: 12px; border-bottom: 2px solid #f5c542; padding-bottom: 6px; }
+  h3 { font-size: 17px; margin-top: 24px; margin-bottom: 8px; }
+  p, ul { margin-bottom: 14px; color: #334155; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  a { color: #3b82f6; }
+  .meta { color: #64748b; font-size: 13px; margin-bottom: 32px; }
+  .back { display: inline-block; margin-bottom: 20px; color: #3b82f6; text-decoration: none; font-size: 13px; }
+  code { background: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+  <a class="back" href="/">&larr; Back to Basman Labs</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: April 21, 2026</p>
+
+  <p>This Privacy Policy describes how <strong>Basman Labs</strong> ("we", "us", or "our") collects, uses, and shares your information when you use our products — including <strong>HandyMan</strong> and <strong>T-800</strong> — which we offer via WhatsApp and web interfaces (collectively, the "Services").</p>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>1.1 Information you provide directly</h3>
+  <ul>
+    <li><strong>Phone number</strong> — your WhatsApp phone number, used to identify you to the bot.</li>
+    <li><strong>Google account email and display name</strong> — collected during Google OAuth when you connect your Google account.</li>
+    <li><strong>Messages you send</strong> to our WhatsApp bots (text, voice transcriptions, images).</li>
+    <li><strong>Configuration</strong> you set in our web interfaces (rules, preferences, API keys if provided).</li>
+  </ul>
+
+  <h3>1.2 Information from Google (via OAuth)</h3>
+  <p>With your explicit consent, we access Google APIs on your behalf:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/spreadsheets</code> — read and write data in Google Sheets that are explicitly shared with our service, to manage financial records on your behalf.</li>
+    <li><code>https://www.googleapis.com/auth/drive.file</code> — create and manage <em>only</em> files that our application creates or that you explicitly open with our app. We do NOT access your broader Drive contents.</li>
+    <li><code>https://www.googleapis.com/auth/userinfo.email</code> and <code>userinfo.profile</code> — to identify and greet you.</li>
+  </ul>
+
+  <h3>1.3 Information generated automatically</h3>
+  <ul>
+    <li><strong>Usage logs</strong> — timestamps, token counts, and costs of AI processing performed on your messages.</li>
+    <li><strong>Bot session state</strong> — recent conversation context used to improve bot responses, typically retained for 4 hours.</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>Process your messages and respond to your queries via the bot.</li>
+    <li>Read from and write to <em>your own</em> Google Sheet to manage your financial/business records.</li>
+    <li>Send usage data (message text) to <strong>Anthropic</strong>, our AI provider, to generate responses. Anthropic processes your data under their own terms.</li>
+    <li>Transcribe voice messages via <strong>Groq</strong> (Whisper model).</li>
+    <li>Track usage and billing (tokens consumed, costs).</li>
+    <li>Diagnose issues and improve the Services.</li>
+  </ul>
+
+  <h2>3. Google User Data — Specific Disclosures</h2>
+  <p>Per Google's API Services User Data Policy, including the Limited Use requirements:</p>
+  <ul>
+    <li>We use Google user data <strong>only</strong> to provide user-facing features of our Services.</li>
+    <li>We do <strong>not</strong> sell Google user data.</li>
+    <li>We do <strong>not</strong> use Google user data for serving ads.</li>
+    <li>We do <strong>not</strong> transfer Google user data to third parties except (a) to Anthropic as described above (message content only, not raw Google sheet contents), (b) if required by law, or (c) for security purposes.</li>
+    <li>We do <strong>not</strong> allow humans to read Google user data except (a) with your explicit consent, (b) for debugging a specific issue you reported, or (c) to comply with law.</li>
+  </ul>
+
+  <h2>4. Data Sharing &amp; Third Parties</h2>
+  <p>We share limited data with:</p>
+  <ul>
+    <li><strong>Anthropic</strong> (AI provider) — your message text is sent to generate responses. <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic privacy policy</a></li>
+    <li><strong>Google</strong> (Sheets &amp; Drive) — as the data controller of your spreadsheet.</li>
+    <li><strong>Meta / WhatsApp</strong> (message transport) — as the provider of the WhatsApp Business Cloud API.</li>
+    <li><strong>Groq</strong> (voice transcription) — audio data only.</li>
+    <li><strong>Supabase</strong> (hosting provider) — stores your encrypted configuration and session state.</li>
+  </ul>
+
+  <h2>5. Data Retention</h2>
+  <ul>
+    <li>Account data (phone, sheet ID, settings) — retained as long as your account is active.</li>
+    <li>Message history in bot sessions — automatically cleared after 4 hours of inactivity.</li>
+    <li>Usage logs — retained for 12 months for billing and analytics.</li>
+    <li>Google OAuth tokens — retained until you disconnect your account.</li>
+  </ul>
+
+  <h2>6. Your Rights</h2>
+  <p>You can at any time:</p>
+  <ul>
+    <li>Request a copy of all data we hold about you.</li>
+    <li>Request deletion of your account and associated data (email us).</li>
+    <li>Revoke Google access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    <li>Stop using the Services at any time by messaging the bot with "STOP" or blocking our WhatsApp number.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>We use industry-standard measures to protect your data, including TLS encryption in transit and encrypted storage at rest in our Supabase database. No system is 100% secure; use of the Services is at your own risk.</p>
+
+  <h2>8. Children</h2>
+  <p>The Services are not intended for users under 16. We do not knowingly collect data from children under 16.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Material changes will be announced on this page with an updated "Last updated" date.</p>
+
+  <h2>10. Contact</h2>
+  <p>For privacy questions, data requests, or account deletion:</p>
+  <p><a href="mailto:basmanab88@gmail.com">basmanab88@gmail.com</a></p>
+
+  <p class="meta" style="margin-top: 48px;">Basman Labs is operated from Israel. Your data may be processed in servers located in Singapore, EU, and the United States (via our providers).</p>
+</body>
+</html>
